@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 20000px;
+}
+.div1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/ddd.jpg);
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.6); 
+    /* Dont use opacity because the 
+    opacity will do on all div */
+}
+.content{
+width: 40%;
+/* background-color: rgb(255, 0, 0); */
+/* hero image */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+.title10{
+    color: white;
+    font-size: 50px;
+    /* text-align: center; */
+}
+.p10{
+    color:white;
+    letter-spacing: 2px;
+    margin: 15px 0px;
+    font-size: 18px;
+}
+.btn{
+/* width: 125px;
+height: 45px; */
+border-radius: 6px;
+border: 0;
+font-size: 20px;
+text-transform: capitalize;
+margin-right:10px ;
+padding: 14px;
+}
+.btn2{
+background-color: rgb(38, 78, 94); 
+color: white;   
+}
+.btn1:hover{
+    background-color: rgb(208, 211, 211);
+}
+/* .btn2:hover{
+    background-color: rgb(8, 8, 179);
+} */
+.btn:hover{
+    opacity: 0.5;
+}
+.header{
+    width: 100%;
+    height: 40px;
+     z-index: 10;
+    background-color: rgb(46, 45, 45);
+    position: fixed;
+    opacity: 0.7;
+}
+.my_ul{
+    /* z-index: 30; */
+    list-style-type: none;
+    /* display:inline-block; */
+    float: right;
+    margin-right: 30px;
+}
+.my_ul a{
+    color:rgb(77, 134, 160) ;
+    display:inline-block;
+    margin-right: 50px;
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+}
+.my_ul a::after{
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color:rgb(28, 126, 143);
+    position: absolute;
+    left: 0;
+    bottom: -10px  ;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.my_ul a:hover::after{
+    opacity: 1;
+}
+.my_logo{
+    width: 80px;
+    height: inherit;
+    margin-left: 80px;
+}
+
+/* ####### */
+.trainer{
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 5px;
+    font-size: 55px;
+    text-transform: capitalize;
+}
+.back-trainer{
+    height: 8px;
+    width: 80px;
+    background-color: black;
+    margin-left: 48%;
+    margin-bottom: 100px;
+}
+.container-0{
+    /* background-color: gray; */
+    width: 60%;
+    /* margin-left: 10%; */
+    margin: auto;
+}
+.pep--{
+    height: 5px;
+    width: 50px;
+    background-color:  rgb(44, 105, 133);
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.trainer-content{
+   position: relative;
+
+}
+.trainer-h1{
+    font-size: 40px;
+}
+.trainer-info{
+  float: left;
+  position: absolute;
+}
+.trainer-p1{
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+.trainer-p2{
+    font-size: 20px;
+}
+.trainer-p2 i{
+    margin-right: 6px;
+}
+.all-img-trainer{
+margin-left: 60%;
+}
+.trainer-content::after{
+    position: absolute;
+    content: "";
+    background-color: rgb(28, 87, 87);
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    opacity: 0 ; 
+    transition: 1s ; 
+}
+.trainer-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    box-shadow: 8px 5px 5px black;
+}
+.ppp2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.ppp4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* ######## */
+.players-h1{
+    font-size: 55px;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.p-players{
+    height: 8px;
+    width: 80px;
+    background-color: black ;
+    margin-left: 48%;
+    margin-bottom: 100px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.team-content {
+margin: 30px 0px;
+}
+.team-item {
+    float: left;
+    background-color: rgb(175, 174, 174);
+    width: 30%;
+    padding: 14px  19px;
+    text-align: center;
+    position: relative;
+}
+.dd {
+    margin: 0px  5%;
+}
+
+.team-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    
+}
+.team-img  img {
+    width: 100%;
+}
+.team-overley {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5) ;
+    visibility: hidden;
+    opacity: 0 ; 
+    transition: 1s ;    
+}
+
+.team-item:hover  .team-overley {
+    opacity: 0.6 ;
+    visibility: visible;
+    
+}
+.team-overley  a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(32, 205, 248);
+    color: #fff;
+    font-size: 23px;
+    margin-left: auto ;
+}
+.team-overley  a  i  {
+    line-height: 40px ;
+}
+
+/* pseudo elements  :  after  &  before  */
+.team-item::after {
+    position: absolute;
+    content: "";
+    width: 100% ;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: rgb(16, 25, 31) ;
+    opacity: 0 ;
+    transition: 1s;
+}
+.team-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3 ;
+}
+
+.team-item::before {
+    position: absolute;
+    content: "";
+
+    width: 100% ;
+    height: 0 ;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: rgb(44, 105, 133) ;
+    opacity: 0;
+    transition: 1s;
+}
+.team-item:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3 ;
+} 
+.team-info-title{
+    color: rgb(7, 90, 138);
+}
+.team-item:hover .team-info-title{
+    color: #2b2222;
+    font-size: 28px;
+}
+.team-item:hover .team-info-sp{
+    color:#fff;
+    font-size: 20px;
+}
+/* ####### */
+
+.container-2{
+    width: 80%;
+    margin: auto;
+    /* background-color: gray; */
+}
+.offer-content{
+
+}
+.offer-item{
+    float: left;
+    /* background-color: rgb(175, 174, 174); */
+    width: 30%;
+    padding: 14px  19px;
+    /* text-align: center; */
+    position: relative;
+    border: 2px solid gray;
+    box-shadow: 8px 5px 5px black;
+}
+.rrr{
+    margin:0px 5%;
+}
+.offer-icon{
+    display: inline;
+    font-size: 40px;
+}
+.offer-icon a{
+    color:rgb(7, 90, 138);
+}
+.offer-info2{
+    display: inline;
+}
+.offer-h2{
+    display: inline;
+    font-size: 26px;
+    margin-left: 38px;
+}
+.offer-p{
+    margin-left: 88px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.offer-item::after{
+    position: absolute;
+    content: "";
+
+    width: 0% ;
+    height: 0 ;
+
+    top: 0;
+    left: 0;
+
+    background-color:rgb(31, 137, 143);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.offer-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7 ;
+}
+.offer-item:hover{
+    /* border: none; */
+}
+.offer-item:hover .offer-h2{
+    color:#0b262e;
+    font-size: 28px;
+}
+.offer-item:hover .offer-p{
+    color: #141618;
+}
+.h1-offer{
+    font-size: 38px;
+    text-align: center;
+    margin-top: 100px;
+}
+.div-offer{
+    height: 5px;
+    width: 50px;
+    background-color:rgb(38, 78, 94) ;
+    margin: auto;
+    margin-bottom: 40px;
+}
+/* ###### */
+
+.h1-club{
+    text-align: center;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    margin-top: 200px;
+}
+.p-club{
+    height: 8px;
+    width: 80px;
+    margin-left: 48%;
+    background-color: black;
+    margin-bottom: 100px;
+}
+.container-3{
+    width: 80%;
+    /* background-color: gray; */
+    margin: auto;
+}
+.club-content{
+    position: relative;
+    
+}
+.club-info{
+    position: absolute;
+    float: left;
+}
+.club-img{
+    margin-left: 40%;
+ 
+}
+.ethad-h1 i{
+    color: black;
+    font-size: 50px;
+    margin-right: 30px;
+}
+.ethad-h1{
+    font-size: 38px;
+    text-transform: capitalize;
+}
+.p-ethad{
+    font-size: 18px;
+    margin-top: 12px;
+    margin-left: 70px;
+}
+.club-content::after{
+    position: absolute;
+    content: "";
+    background-color: rgb(28, 87, 87);
+    width: 50%;
+    height: 0%;
+    top: 0;
+    right: 0;
+    opacity: 0 ; 
+    transition: 1s ; 
+}
+.club-content:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    box-shadow: 8px 5px 5px rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
